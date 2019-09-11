@@ -1,0 +1,239 @@
+<div class="wrapper-md" >
+<!--     <tabset justified="true" class="tab-container"> -->
+      <!-- <tab heading="统计"> -->
+<!--       </tab> -->
+<!--       <tab heading="轨迹" > -->
+        <div class="row mar-10" ng-controller="js.modules.grid2Controller">
+        <div class="row-wbg2 col-md-9">
+          <!-- <div class="tablehead_renyuan panel-heading no-border bg-primary text-lt">
+            <span class="label bg-danger pull-right m-t-xs ">共10人</span>
+            轨迹
+          </div> -->
+
+         <!--  <div class="col-md-3 myVar" ng-hide="myVar" style="">
+          
+          </div> -->
+            <!-- <i class="fa fa-map-marker ddqcxyl2"></i>
+            <i class="fa fa-map-marker ddqcxyl22"></i>
+            <i class="fa fa-map-marker ddjs12"></i>
+            <i class="fa fa-map-marker ddjbs2"></i>
+            <i class="fa fa-map-marker ddhjl2"></i>
+            <i class="fa fa-map-marker ddyy2"></i>
+            <i class="fa fa-map-marker ddadd1"></i>
+            <i class="fa fa-map-marker ddadd2"></i>
+            <i class="fa fa-map-marker ddadd3"></i>
+            <i class="fa fa-map-marker ddadd4"></i>
+            <i class="fa fa-map-marker ddadd5"></i>
+            <i class="fa fa-map-marker ddadd6"></i> -->
+            <!-- <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+            <symbol id="icon-location2" viewBox="0 0 50 50">
+
+            <path d="M16 0c-5.523 0-10 4.477-10 10 0 10 10 22 10 22s10-12 10-22c0-5.523-4.477-10-10-10zM16 16.125c-3.383 0-6.125-2.742-6.125-6.125s2.742-6.125 6.125-6.125 6.125 2.742 6.125 6.125-2.742 6.125-6.125 6.125zM12.125 10c0-2.14 1.735-3.875 3.875-3.875s3.875 1.735 3.875 3.875c0 2.14-1.735 3.875-3.875 3.875s-3.875-1.735-3.875-3.875z"></path>
+            </symbol>
+            </defs>
+            
+            </svg> -->
+           <!--  <div><i class="fa fa-map-marker dd5"></i>
+            <i class="fa fa-map-marker dd4"></i>
+            <i class="fa fa-map-marker dd3"></i>
+            <i class="fa fa-map-marker dd2"></i>
+            <i class="fa fa-map-marker dd1"></i>
+            <i class="fa fa-map-marker dd6"></i>
+            <i class="fa fa-map-marker dd7"></i>
+            <i class="fa fa-map-marker dd8"></i>
+            <i class="fa fa-map-marker dd9"></i></div> -->
+            <!-- <svg class="icon icon-location2"></svg> -->
+          <!-- <use xlink:href="#icon-location2"></use> -->
+          <svg width="100%" height="100%" id="svg" viewBox="0 0 730 460" preserveAspectRatio="xMinYMin meet">
+            
+            
+     
+            <image
+              width="100%" height="100%" x="0" y="0" stroke="black"
+              xlink:href="img/dt2.png" preserveAspectRatio ="none">
+            </image>
+            <!--小车点位-->
+            <image width="20" height="20" x="515" y="220" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="490" y="200" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="405" y="170" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="390" y="150" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="340" y="125" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="220" y="200" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="290" y="205" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="415" y="275" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="425" y="280" fill="#f00" xlink:href="img/lg222.png"></image>
+
+            <image width="20" height="20" x="530" y="270" fill="#f00" xlink:href="img/lg222.png"></image>
+            <!--小车点位end-->
+
+            <path id="path"
+            stroke="#fdb23c" stroke-width="4"
+            fill="none" marker-start="url(#markerArrow)" marker-end="url(#markerArrow)"/>
+
+            <defs>  
+               <marker id="markerArrow" markerWidth="8" markerHeight="8" refx="2" refy="4" orient="auto">  
+                   <path d="M2,2 L1,5 L5,4 L2,2" style="fill: #fdb23c;" />  
+               </marker>  
+            </defs>
+        
+            <image id="car" transform="translate(-20,-20)" width="40px" height="40px">
+                <animate  values="0;1;1;1;1;0" dur="6s" repeatCount="0" />
+            </image>
+            <circle id="travel" cx="50" cy="50" r="50" fill="url(#car)"></circle>
+            
+            <!--运动的相关参数  1、href链接到图片   mpath链接到路径-->
+            <animateMotion id="motion" xlink:href="#car" begin="indefinite" dur="10s" fill="freeze" rotate="auto" repeatCount="1">
+                <mpath xlink:href="#path" />
+            </animateMotion>
+          </svg>
+              <!-- <img src="img/dtdt.png" alt=""  class="img910"> -->
+     
+        </div>
+        <div class="col-md-3 row-wbg2 bg-white">
+          <div class="tablehead_renyuan panel-heading no-border bg-primary text-lt">
+            <!-- <span class="label bg-danger pull-right m-t-xs ">共10人</span> -->
+            搜索
+          </div>
+          <div class="panel panel-info" draggable="true">
+            <div class="panel-heading pd85">
+              <div class="form-group2">
+                <label class="col-sm-3 control-label pd5">车牌：</label>
+                <div class="col-sm-9 pd02">
+                  <div class="row">
+                    <div class="">
+                      <input type="text" class="form-control" placeholder="" ng-model="query.travelName">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group2">
+                <label class="col-sm-3 control-label pd5">日期：</label>
+                <div class="col-sm-9 pd02">
+                    <input type="text" class="form-control" id="mydatepicker" placeholder="请选择日期" ng-model="query.travelDate"/>
+                </div>
+              </div>
+              <button class="btn m-b-xs w-xs btn-success ckgj-btn" ng-click="clickpeople()"><i class="icon-magnifier text-cent"></i>查看轨迹 </button>
+            </div>
+
+            <div class="row drow" ng-repeat="item in items">
+              <!-- <div class="col-md-3">
+                <a href="" class="">
+                    <img class="r r-2x thumb50" ng-src="{{item.travelImg}}">
+                </a>
+              </div> -->
+              <div class="col-md-10">
+                <ul class="gjxqul">
+                  <li class="list-none"><span class="db">车牌：{{item.travelName}}</span></li>
+                  <li class="list-none">
+                    <button type="" class="btnorange" ng-click="clickgj(item.travelName)">轨迹</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <ul class="gjxqul">
+                  <li class="list-none"><span class="db">车牌：{{item.travelName}}</span></li>
+                  <li class="list-none">
+                    <button type="" class="btnorange" ng-click="clickgj(item.travelName)">轨迹</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <ul class="gjxqul">
+                  <li class="list-none"><span class="db">车牌：{{item.travelName}}</span></li>
+                  <li class="list-none">
+                    <button type="" class="btnorange" ng-click="clickgj(item.travelName)">轨迹</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <ul class="gjxqul">
+                  <li class="list-none"><span class="db">车牌：{{item.travelName}}</span></li>
+                  <li class="list-none">
+                    <button type="" class="btnorange" ng-click="clickgj(item.travelName)">轨迹</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <ul class="gjxqul">
+                  <li class="list-none"><span class="db">车牌：{{item.travelName}}</span></li>
+                  <li class="list-none">
+                    <button type="" class="btnorange" ng-click="clickgj(item.travelName)">轨迹</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <ul class="gjxqul">
+                  <li class="list-none"><span class="db">车牌：{{item.travelName}}</span></li>
+                  <li class="list-none">
+                    <button type="" class="btnorange" ng-click="clickgj(item.travelName)">轨迹</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <ul class="gjxqul">
+                  <li class="list-none"><span class="db">车牌：{{item.travelName}}</span></li>
+                  <li class="list-none">
+                    <button type="" class="btnorange" ng-click="clickgj(item.travelName)">轨迹</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <ul class="gjxqul">
+                  <li class="list-none"><span class="db">车牌：{{item.travelName}}</span></li>
+                  <li class="list-none">
+                    <button type="" class="btnorange" ng-click="clickgj(item.travelName)">轨迹</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <ul class="gjxqul">
+                  <li class="list-none"><span class="db">车牌：{{item.travelName}}</span></li>
+                  <li class="list-none">
+                    <button type="" class="btnorange" ng-click="clickgj(item.travelName)">轨迹</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <ul class="gjxqul">
+                  <li class="list-none"><span class="db">车牌：{{item.travelName}}</span></li>
+                  <li class="list-none">
+                    <button type="" class="btnorange" ng-click="clickgj(item.travelName)">轨迹</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <ul class="gjxqul">
+                  <li class="list-none"><span class="db">车牌：{{item.travelName}}</span></li>
+                  <li class="list-none">
+                    <button type="" class="btnorange" ng-click="clickgj(item.travelName)">轨迹</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <ul class="gjxqul">
+                  <li class="list-none"><span class="db">车牌：{{item.travelName}}</span></li>
+                  <li class="list-none">
+                    <button type="" class="btnorange" ng-click="clickgj(item.travelName)">轨迹</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-10">
+                <ul class="gjxqul">
+                  <li class="list-none"><span class="db">车牌：{{item.travelName}}</span></li>
+                  <li class="list-none">
+                    <button type="" class="btnorange" ng-click="clickgj(item.travelName)">轨迹</button>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        </div>
+<!--       </tab>
+  </tabset> -->
+      
+</div>

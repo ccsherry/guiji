@@ -1,0 +1,36 @@
+{
+    "content": [
+        {
+            "time": "2018-12-4", 
+            "jianqu": "全部监区", 
+            "chejian": "全部车间", 
+            "picihao": "111", 
+            "total":500,
+            "yd":300,
+            "wd":200,
+            "police":"警察A"
+        },
+        {
+            "time": "2018-12-4", 
+            "jianqu": "一监区", 
+            "chejian": "高危嫌犯", 
+            "picihao": "222", 
+            "total":500,
+            "yd":380,
+            "wd":120,
+            "police":"警察A"
+        },
+        {
+            "time": "2018-12-4", 
+            "jianqu": "一监区", 
+            "chejian": "高危嫌犯", 
+            "picihao": "222", 
+            "total":500,
+            "yd":380,
+            "wd":120,
+            "police":"警察B"
+        }
+    ],    
+    "totalElements": 100
+   
+}

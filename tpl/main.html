@@ -1,0 +1,463 @@
+<div class="wrapper-md-main" ng-controller="FlotChartDemoCtrl">
+	<div class="row">
+		<div class="col-md-12 main-pad-top20">
+      <div class="bg-darkblue panel2">
+        <div class="panel-heading-time">
+          	<!-- <div class="pad-5-0 col-xs-2">
+                <div class="panel-main panel-main-green item panel-pad-5">
+                  <span class="main-text-time main-text-white">时间</span>
+                  <span class="main-time-span block main-text-white" id="show"></span>
+                  <div class="top text-right w-full">
+                    <i class="fa fa-caret-down text-warning m-r-sm"></i>
+                  </div>
+                </div>
+            </div> -->
+            <div class="col-lg-2 col-sm-4">
+                        <div class="card gradient-3">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">时间</h3>
+                                <div class="d-inline-block">
+                                    <h3 class="margin10 text-white" id="show"></h3>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="font50 fa fa-clock-o"></i></span>
+                            </div>
+                        </div>
+            </div>
+            <div class="col-lg-5 col-sm-8">
+                        <div class="card gradient-1">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">全所在押犯人总人数4565</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white"></h2>
+                                    <span class="ryspan">在监333</span>
+                                    <span class="ryspan">新康医院2</span>
+                                    <span class="ryspan">社会医院7</span>
+                                    <span class="ryspan">其他2</span>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="font50 fa fa-users"></i></span>
+                            </div>
+                        </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                        <div class="card gradient-2">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">其他离监</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white"></h2>
+                                    <span class="ryspan">监外执行333</span>
+                                    <span class="ryspan">历年在逃56</span>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="font50 fa fa-male"></i></span>
+                            </div>
+                        </div>
+              </div>
+              <div class="col-lg-2 col-sm-4">
+                        <div class="card gradient-4">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">在册</h3>
+                                <div class="d-inline-block">
+                                    <h3 class="margin10 text-white">888</h3>
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="font50 fa fa-tasks"></i></span>
+                            </div>
+                        </div>
+              </div>
+
+
+            <!-- <div class="pad-5-0 col-md-5">
+                <span href="" class="block panel-main bg-info2 item">
+                	<table class="table m-b-none">
+           		 <thead>
+                		<tr>
+                			<td class="main-td2" colspan = 8>全所在押犯人总人数{{qzcNum}}</td>
+                		</tr>
+                		</thead>
+                		<tr class="bg-graywhite">
+                			<td>在监</td>
+                			<td><a href="#" id="inPrison" data-type="text" >{{itemEntry.inPrison}}</a></td>
+                			<td>新康医院</td>
+                			<td><a href="#" id="xkHospital" data-type="text" >{{itemEntry.xkHospital}}</a></td>
+                			<td>社会医院</td>
+                			<td><a href="#" id="shHospital" data-type="text" >{{itemEntry.shHospital}}</a></td>
+                			<td>其他</td>
+                			<td><a href="#" id="others" data-type="text" >{{itemEntry.others}}</a></td>
+                		</tr>
+                	</table>
+                </span>
+            </div>
+              
+            <div class="pad-5-0 col-md-4">
+                <span href="" class="block panel-main item">
+                	<table class="table m-b-none">
+           		      <thead>
+                		<tr>
+                			<td class="main-td3" colspan = 4>离监{{qljNum}}</td>
+                		</tr>
+                		</thead>
+                		<tr class="bg-graywhite2">
+                			<td class="main-td-td3">监外执行</td>
+                			<td><a href="#" id="outPrison" data-type="text" >{{itemEntry.outPrison}}</a></td>
+                			<td class="main-td-td3">历年在逃</td>
+                			<td><a href="#" id="outRun" data-type="text">{{itemEntry.outRun}}</a></td></a>
+                		</tr>
+                	</table>
+                </span>
+            </div>
+
+
+  			    <div class="pad-5-0 col-xs-1">
+                <div class="panel-main item panel-pad-5 panel-main-orange">
+                <span class="main-text-time main-text-white">在册</span>
+                  <span class="main-time-span2 block" >{{qallNum}}</span>
+                  <div class="top text-right w-full">
+                    <i class="fa fa-caret-down text-warning m-r-sm"></i>
+                  </div>
+                </div>
+            </div>
+ -->
+        </div>
+          
+            <table class="nobottomtb m-b-none">
+              <thead>
+                <tr class="main-table-tr">
+                  <th class="main-table-th">
+                      <div class="data">
+                          <!-- <i class="fa fa-home fa-gq"></i> --><span class="numer-txt">管区</span>
+                      </div>
+                  </th>
+                 
+                   <th class="main-table-th">点名状态</th>
+                   <th class="main-table-th">开始时间</th>
+                   <th class="main-table-th">结束时间</th>
+                   <th class="main-table-th">
+                   	 <div class="data">
+                          <span class="numer-txt">在押</span>
+                          <!-- <span class="numer">{{totalpAllNum}}</span>人 -->
+                      </div>
+                   	</th> 
+                   	<th class="main-table-th">
+                   	 <div class="data">
+                          <span class="numer-txt">新康医院住院</span>
+                      </div>
+                   	</th> 
+                   	<th class="main-table-th">
+                   	 <div class="data">
+                          <span class="numer-txt">社会医院住院</span>
+                      </div>
+                   	</th> 
+                   	<th class="main-table-th">
+                   	 <div class="data">
+                          <span class="numer-txt">其他离监</span>
+                      </div>
+                   	</th> 
+                   	<th class="main-table-th">
+                      <div class="data">
+                          <span class="numer-txt">在队</span>
+                          <!-- <span class="numer">{{totalpCjNum}}</span>人 -->
+                      </div>
+                  </th>
+                   <th class="main-table-th">
+         		         <div class="data">
+                          <span class="numer-txt">已点</span>
+                        <!--   <span class="numer">{{totalpYdNum}}</span>人 -->
+                      </div> 
+                   </th>
+                  
+                   
+                  <th class="main-table-th">
+                      <div class="data">
+                          <span class="numer-txt">外部就医</span>
+                         <!--  <span class="numer">{{totalpWcjyNum}}</span>人 -->
+                      </div>
+                  </th>
+                  <th class="main-table-th">
+                      <div class="data">
+                          <span class="numer-txt">所内就医</span>
+                         <!--  <span class="numer">{{totalpSnjyNum}}</span>人 -->
+                      </div>
+                  </th>
+                   <th class="main-table-th">
+                      <div class="data">
+                          <span class="numer-txt">会见</span>
+                        <!--   <span class="numer">{{totalpHjNum}}</span>人 -->
+                      </div>
+                  </th> 
+                  <th class="main-table-th">
+                      <div class="data">
+                          <span class="numer-txt">其他</span>
+                          <!-- <span class="numer">{{totalpOthersNum}}</span>人 -->
+                      </div>
+                  </th>
+                  <th class="main-table-th">
+                      <div class="data">
+                          <span class="numer-txt">未点</span>
+                          <!-- <span class="numer">{{totalpUdNum}}</span>人 -->
+                      </div>
+                  </th> 
+                </tr>
+              </thead>
+              <tbody class="main-tbody">
+    		  
+    				  <tr class="">
+                      <td class="">一管区</td>
+                      <td class="">{{item.callStatus_Arr}}<button class="className btn-ing">正在点名</button></td>
+                      <td class="">{{item.gmtCreate | date:'HH:mm:ss'}}</td>
+                      <td class="">{{item.gmtExit | date:'HH:mm:ss'}}</td>
+                       <td class="">{{item.pAllNum}}</td> 
+                      <td class="">{{item.pXkzyNum}}</td>
+                      <td class="">{{item.pShzyNum}}</td>
+                      <td class="">{{item.pOtherljNum}}</td>
+                       <td class="">{{item.pCjNum}}</td>
+                      <td class="">{{item.pYdNum}}</td>
+                      <td class="">{{item.pWcjyNum}}</td>
+                      <td class="">{{item.pSnjyNum}}</td>
+                      <td class="">{{item.pHjNum}}</td>
+                      <td class="">{{item.pOthersNum}}</td>
+                      <td class="">{{item.pUdNum}}</td>
+                    </tr> 
+    		  
+              		 <tr class="" ng-repeat="item in items">
+                      <td class="">{{item.areaId}}</td>
+                      <td class="">{{item.callStatus_Arr}}</td>
+                      <td class="">{{item.gmtCreate | date:'HH:mm:ss'}}</td>
+                      <td class="">{{item.gmtExit | date:'HH:mm:ss'}}</td>
+                       <td class="">{{item.pAllNum}}</td> 
+                      <td class="">{{item.pXkzyNum}}</td>
+                      <td class="">{{item.pShzyNum}}</td>
+                      <td class="">{{item.pOtherljNum}}</td>
+                       <td class="">{{item.pCjNum}}</td>
+                      <td class="">{{item.pYdNum}}</td>
+                      <td class="">{{item.pWcjyNum}}</td>
+                      <td class="">{{item.pSnjyNum}}</td>
+                      <td class="">{{item.pHjNum}}</td>
+                      <td class="">{{item.pOthersNum}}</td>
+                      <td class="">{{item.pUdNum}}</td>
+                    </tr>  
+    				
+    				  <tr class="">
+                      <td class="">三管区</td>
+                      <td class="">{{item.callStatus_Arr}}<button class="className btn-end">点名结束</button></td>
+                      <td class="">{{item.gmtCreate | date:'HH:mm:ss'}}</td>
+                      <td class="">{{item.gmtExit | date:'HH:mm:ss'}}</td>
+                       <td class="">{{item.pAllNum}}4444</td> 
+                      <td class="">{{item.pXkzyNum}}</td>
+                      <td class="">{{item.pShzyNum}}</td>
+                      <td class="">{{item.pOtherljNum}}</td>
+                       <td class="">{{item.pCjNum}}</td>
+                      <td class="">{{item.pYdNum}}</td>
+                      <td class="">{{item.pWcjyNum}}</td>
+                      <td class="">{{item.pSnjyNum}}</td>
+                      <td class="">{{item.pHjNum}}</td>
+                      <td class="">{{item.pOthersNum}}</td>
+                      <td class="">{{item.pUdNum}}</td>
+                    </tr> 
+    				
+    				  <tr class="">
+                      <td class="">四管区</td>
+                      <td class="">{{item.callStatus_Arr}}</td>
+                      <td class="">{{item.gmtCreate | date:'HH:mm:ss'}}</td>
+                      <td class="">{{item.gmtExit | date:'HH:mm:ss'}}</td>
+                       <td class="">{{item.pAllNum}}</td> 
+                      <td class="">{{item.pXkzyNum}}</td>
+                      <td class="">{{item.pShzyNum}}</td>
+                      <td class="">{{item.pOtherljNum}}</td>
+                       <td class="">{{item.pCjNum}}</td>
+                      <td class="">{{item.pYdNum}}</td>
+                      <td class="">{{item.pWcjyNum}}</td>
+                      <td class="">{{item.pSnjyNum}}</td>
+                      <td class="">{{item.pHjNum}}</td>
+                      <td class="">{{item.pOthersNum}}</td>
+                      <td class="">{{item.pUdNum}}</td>
+                    </tr> 
+              
+    				  <tr class="">
+                      <td class="">五管区</td>
+                      <td class="">{{item.callStatus_Arr}}</td>
+                      <td class="">{{item.gmtCreate | date:'HH:mm:ss'}}</td>
+                      <td class="">{{item.gmtExit | date:'HH:mm:ss'}}</td>
+                       <td class="">{{item.pAllNum}}</td> 
+                      <td class="">{{item.pXkzyNum}}</td>
+                      <td class="">{{item.pShzyNum}}</td>
+                      <td class="">{{item.pOtherljNum}}</td>
+                       <td class="">{{item.pCjNum}}</td>
+                      <td class="">{{item.pYdNum}}</td>
+                      <td class="">{{item.pWcjyNum}}</td>
+                      <td class="">{{item.pSnjyNum}}</td>
+                      <td class="">{{item.pHjNum}}</td>
+                      <td class="">{{item.pOthersNum}}</td>
+                      <td class="">{{item.pUdNum}}</td>
+                    </tr> 
+    				
+    				  <tr class="">
+                      <td class="">六管区</td>
+                      <td class="">{{item.callStatus_Arr}}</td>
+                      <td class="">{{item.gmtCreate | date:'HH:mm:ss'}}</td>
+                      <td class="">{{item.gmtExit | date:'HH:mm:ss'}}</td>
+                       <td class="">{{item.pAllNum}}</td> 
+                      <td class="">{{item.pXkzyNum}}</td>
+                      <td class="">{{item.pShzyNum}}</td>
+                      <td class="">{{item.pOtherljNum}}</td>
+                       <td class="">{{item.pCjNum}}</td>
+                      <td class="">{{item.pYdNum}}</td>
+                      <td class="">{{item.pWcjyNum}}</td>
+                      <td class="">{{item.pSnjyNum}}</td>
+                      <td class="">{{item.pHjNum}}</td>
+                      <td class="">{{item.pOthersNum}}</td>
+                      <td class="">{{item.pUdNum}}</td>
+                    </tr> 
+    				
+    				  <tr class="">
+                      <td class="">七管区</td>
+                      <td class="">{{item.callStatus_Arr}}</td>
+                      <td class="">{{item.gmtCreate | date:'HH:mm:ss'}}</td>
+                      <td class="">{{item.gmtExit | date:'HH:mm:ss'}}</td>
+                       <td class="">{{item.pAllNum}}</td> 
+                      <td class="">{{item.pXkzyNum}}</td>
+                      <td class="">{{item.pShzyNum}}</td>
+                      <td class="">{{item.pOtherljNum}}</td>
+                       <td class="">{{item.pCjNum}}</td>
+                      <td class="">{{item.pYdNum}}</td>
+                      <td class="">{{item.pWcjyNum}}</td>
+                      <td class="">{{item.pSnjyNum}}</td>
+                      <td class="">{{item.pHjNum}}</td>
+                      <td class="">{{item.pOthersNum}}</td>
+                      <td class="">{{item.pUdNum}}</td>
+                    </tr> 
+    				
+    				  <tr class="">
+                      <td class="">八管区</td>
+                      <td class="">{{item.callStatus_Arr}}</td>
+                      <td class="">{{item.gmtCreate | date:'HH:mm:ss'}}</td>
+                      <td class="">{{item.gmtExit | date:'HH:mm:ss'}}</td>
+                       <td class="">{{item.pAllNum}}</td> 
+                      <td class="">{{item.pXkzyNum}}</td>
+                      <td class="">{{item.pShzyNum}}</td>
+                      <td class="">{{item.pOtherljNum}}</td>
+                       <td class="">{{item.pCjNum}}</td>
+                      <td class="">{{item.pYdNum}}</td>
+                      <td class="">{{item.pWcjyNum}}</td>
+                      <td class="">{{item.pSnjyNum}}</td>
+                      <td class="">{{item.pHjNum}}</td>
+                      <td class="">{{item.pOthersNum}}</td>
+                      <td class="">{{item.pUdNum}}</td>
+                    </tr> 
+    				
+    				  <tr class="">
+                      <td class="">九管区</td>
+                      <td class="">{{item.callStatus_Arr}}</td>
+                      <td class="">{{item.gmtCreate | date:'HH:mm:ss'}}</td>
+                      <td class="">{{item.gmtExit | date:'HH:mm:ss'}}</td>
+                       <td class="">{{item.pAllNum}}</td> 
+                      <td class="">{{item.pXkzyNum}}</td>
+                      <td class="">{{item.pShzyNum}}</td>
+                      <td class="">{{item.pOtherljNum}}</td>
+                       <td class="">{{item.pCjNum}}</td>
+                      <td class="">{{item.pYdNum}}</td>
+                      <td class="">{{item.pWcjyNum}}</td>
+                      <td class="">{{item.pSnjyNum}}</td>
+                      <td class="">{{item.pHjNum}}</td>
+                      <td class="">{{item.pOthersNum}}</td>
+                      <td class="">{{item.pUdNum}}</td>
+                    </tr> 
+    				
+    				  <tr class="">
+                      <td class="">十一管区</td>
+                      <td class="">{{item.callStatus_Arr}}</td>
+                      <td class="">{{item.gmtCreate | date:'HH:mm:ss'}}</td>
+                      <td class="">{{item.gmtExit | date:'HH:mm:ss'}}</td>
+                       <td class="">{{item.pAllNum}}</td> 
+                      <td class="">{{item.pXkzyNum}}</td>
+                      <td class="">{{item.pShzyNum}}</td>
+                      <td class="">{{item.pOtherljNum}}</td>
+                       <td class="">{{item.pCjNum}}</td>
+                      <td class="">{{item.pYdNum}}</td>
+                      <td class="">{{item.pWcjyNum}}</td>
+                      <td class="">{{item.pSnjyNum}}</td>
+                      <td class="">{{item.pHjNum}}</td>
+                      <td class="">{{item.pOthersNum}}</td>
+                      <td class="">{{item.pUdNum}}</td>
+                    </tr> 
+    				
+    				  <tr class="">
+                      <td class="">十二管区</td>
+                      <td class="">{{item.callStatus_Arr}}</td>
+                      <td class="">{{item.gmtCreate | date:'HH:mm:ss'}}</td>
+                      <td class="">{{item.gmtExit | date:'HH:mm:ss'}}</td>
+                       <td class="">{{item.pAllNum}}</td> 
+                      <td class="">{{item.pXkzyNum}}</td>
+                      <td class="">{{item.pShzyNum}}</td>
+                      <td class="">{{item.pOtherljNum}}</td>
+                       <td class="">{{item.pCjNum}}</td>
+                      <td class="">{{item.pYdNum}}</td>
+                      <td class="">{{item.pWcjyNum}}</td>
+                      <td class="">{{item.pSnjyNum}}</td>
+                      <td class="">{{item.pHjNum}}</td>
+                      <td class="">{{item.pOthersNum}}</td>
+                      <td class="">{{item.pUdNum}}</td>
+                    </tr> 
+    				
+    				  <tr class="">
+                      <td class="">十三管区</td>
+                      <td class="">{{item.callStatus_Arr}}</td>
+                      <td class="">{{item.gmtCreate | date:'HH:mm:ss'}}</td>
+                      <td class="">{{item.gmtExit | date:'HH:mm:ss'}}</td>
+                       <td class="">{{item.pAllNum}}</td> 
+                      <td class="">{{item.pXkzyNum}}</td>
+                      <td class="">{{item.pShzyNum}}</td>
+                      <td class="">{{item.pOtherljNum}}</td>
+                       <td class="">{{item.pCjNum}}</td>
+                      <td class="">{{item.pYdNum}}</td>
+                      <td class="">{{item.pWcjyNum}}</td>
+                      <td class="">{{item.pSnjyNum}}</td>
+                      <td class="">{{item.pHjNum}}</td>
+                      <td class="">{{item.pOthersNum}}</td>
+                      <td class="">{{item.pUdNum}}</td>
+                    </tr> 
+    				
+    				  <tr class="">
+                      <td class="">十四管区</td>
+                      <td class="">{{item.callStatus_Arr}}</td>
+                      <td class="">{{item.gmtCreate | date:'HH:mm:ss'}}</td>
+                      <td class="">{{item.gmtExit | date:'HH:mm:ss'}}</td>
+                       <td class="">{{item.pAllNum}}</td> 
+                      <td class="">{{item.pXkzyNum}}</td>
+                      <td class="">{{item.pShzyNum}}</td>
+                      <td class="">{{item.pOtherljNum}}</td>
+                       <td class="">{{item.pCjNum}}</td>
+                      <td class="">{{item.pYdNum}}</td>
+                      <td class="">{{item.pWcjyNum}}</td>
+                      <td class="">{{item.pSnjyNum}}</td>
+                      <td class="">{{item.pHjNum}}</td>
+                      <td class="">{{item.pOthersNum}}</td>
+                      <td class="">{{item.pUdNum}}</td>
+                    </tr> 
+    				
+              		<tr class="bg-main-orange">
+              			<td colspan = 4 style="text-align: left;">汇总</td>
+              			<td>{{totalpAllNum}}</td> 
+              			<td class="">{{totalXKzyNum}}</td>
+                      <td class="">{{totalSHzyNum}}</td>
+                      <td class="">{{totalOtherljNum}}</td>
+                      <td>{{totalpCjNum}}</td>
+              			<td>{{totalpYdNum}}</td>
+              			<td>{{totalpWcjyNum}}</td>
+              			<td>{{totalpSnjyNum}}</td>
+              			<td>{{totalpHjNum}}</td>
+              			<td>{{totalpOthersNum}}</td>
+              			<td>{{totalpUdNum}}</td>
+              		</tr>
+                <!-- <tr>
+                  <td>二管区</td>
+                  <td>134</td>
+                  <td>56</td>
+                  <td>77</td>
+                  <td>432</td>
+                  <td>45</td>
+                  <td>99</td>
+                </tr> -->
+              </tbody>
+            </table>
+      </div>
+    </div>
+	</div>
+</div>

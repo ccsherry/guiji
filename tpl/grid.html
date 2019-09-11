@@ -1,0 +1,175 @@
+<div class="wrapper-md" >
+<!--     <tabset justified="true" class="tab-container"> -->
+      <!-- <tab heading="统计"> -->
+<!--       </tab> -->
+<!--       <tab heading="轨迹" > -->
+        <div class="row mar-10" ng-controller="js.modules.gridController">
+        <div class="row-wbg2 col-md-9">
+          <!-- <div class="tablehead_renyuan panel-heading no-border bg-primary text-lt">
+            <span class="label bg-danger pull-right m-t-xs ">共10人</span>
+            轨迹
+          </div> -->
+
+         <!--  <div class="col-md-3 myVar" ng-hide="myVar" style="">
+          
+          </div> -->
+            <!-- <i class="fa fa-map-marker ddqcxyl2"></i>
+            <i class="fa fa-map-marker ddqcxyl22"></i>
+            <i class="fa fa-map-marker ddjs12"></i>
+            <i class="fa fa-map-marker ddjbs2"></i>
+            <i class="fa fa-map-marker ddhjl2"></i>
+            <i class="fa fa-map-marker ddyy2"></i>
+
+			      <i class="fa fa-map-marker ddadd1"></i>
+            <i class="fa fa-map-marker ddadd2"></i>
+            <i class="fa fa-map-marker ddadd3"></i>
+            <i class="fa fa-map-marker ddadd4"></i>
+            <i class="fa fa-map-marker ddadd5"></i>
+            <i class="fa fa-map-marker ddadd6"></i> -->
+
+<svg 
+    xmlns="http://www.w3.org/2000/svg" version="1.1"
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" id="svg" viewBox="0 0 730 460" preserveAspectRatio="xMinYMin meet">
+
+        <image
+              width="100%" height="100%" x="0" y="0" stroke="black"
+              xlink:href="img/dt2.jpg" preserveAspectRatio ="none">
+        </image>
+
+        <!--楼标识-->
+            <image width="20" height="20" x="560" y="175" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="480" y="150" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="440" y="130" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="390" y="110" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="350" y="90" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="370" y="75" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="270" y="110" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="180" y="160" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="210" y="205" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="250" y="200" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="295" y="225" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="345" y="255" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="415" y="275" fill="#f00" xlink:href="img/lg222.png"></image>
+            <image width="20" height="20" x="425" y="280" fill="#f00" xlink:href="img/lg222.png"></image>
+        <!--楼标识end-->
+        
+        
+        
+        <path id="path"
+            stroke="#fdb23c" stroke-width="4"
+            fill="none" />
+            <image id="car" transform="translate(-30,-40)" width="70px" height="70px">
+                <animate  values="0;1;1;1;1;0" dur="3s" repeatCount="0" />
+            </image>
+            <circle id="travel" cx="50" cy="50" r="50" fill="url(#car)"></circle>
+            
+            
+            <animateMotion id="motion" xlink:href="#car" begin = "indefinite" dur="3s" fill="freeze" repeatCount="1">
+                <mpath xlink:href="#path" />
+            </animateMotion>
+        
+</svg>
+
+         <!--  <svg xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="550px" id="svg" viewBox="0 0 730 530" preserveAspectRatio="xMinYMin meet">
+            
+
+            <image
+              width="100%" height="460px" x="0" y="0" stroke="black"
+              xlink:href="img/dt2.png" preserveAspectRatio ="none">
+            </image>
+            <i class="fa fa-map-marker ddqcxyl2"></i>
+            <i class="fa fa-map-marker ddqcxyl22"></i>
+            <i class="fa fa-map-marker ddjs12"></i>
+            <i class="fa fa-map-marker ddjbs2"></i>
+            <i class="fa fa-map-marker ddhjl2"></i>
+            <i class="fa fa-map-marker ddyy2"></i>
+           
+            <path id="path"
+            stroke="#fdb23c" stroke-width="4"
+            fill="none" />
+            <image id="car" transform="translate(-30,-40)" width="70px" height="70px">
+                <animate  values="0;1;1;1;1;0" dur="3s" repeatCount="0" />
+            </image>
+            <circle id="travel" cx="50" cy="50" r="50" fill="url(#car)"></circle>
+            
+            
+            <animateMotion id="motion" begin = "indefinite" dur="3s" fill="freeze" repeatCount="1">
+                <mpath xlink:href="#theMotionPath" />
+            </animateMotion>
+            
+            
+          </svg> -->
+     
+        </div>
+        <div class="col-md-3 row-wbg2 bg-white">
+          <div class="tablehead_renyuan panel-heading no-border bg-primary text-lt">
+            <!-- <span class="label bg-danger pull-right m-t-xs ">共10人</span> -->
+            搜索
+          </div>
+          <div class="panel panel-info" draggable="true">
+            <div class="panel-heading pd85">
+              <div class="form-group2">
+                <label class="col-sm-3 control-label pd5">姓名：</label>
+                <div class="col-sm-9 pd02">
+                  <div class="row">
+                    <div class="">
+                      <input type="text" class="form-control" placeholder="" ng-model="query.travelName">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="form-group2">
+                <label class="col-sm-3 control-label pd5">编号：</label>
+                <div class="col-sm-9 pd02">
+                  <div class="row">
+                    <div class="">
+                      <input type="text" class="form-control" placeholder="" ng-model="query.travelId">
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+              <div class="form-group2">
+                <label class="col-sm-3 control-label pd5">日期：</label>
+                <div class="col-sm-9 pd02">
+                  
+                    
+                      <!-- <input type="text" class="form-control" placeholder="例5月10日请输：0510" ng-model="query.travelDate"> -->
+                      <input type="text" class="form-control" id="mydatepicker" placeholder="请选择日期" ng-model="query.travelDate"/>
+                    
+                
+                </div>
+              </div>
+              <button class="btn m-b-xs w-xs btn-success ckgj-btn" ng-click="clickgj(query.travelName)"><i class="icon-magnifier text-cent"></i>查看犯人 </button>
+              <button class="btn m-b-xs w-xs btn-success ckgj-btn" ng-click="openmodal()"><i class="icon-magnifier text-cent"></i>弹框</button>
+            </div>
+            <div class="row drow" ng-repeat="item in items">
+              <div class="col-md-3">
+                <a href="" class="">
+                    <img class="r r-2x thumb50" ng-src="../{{item.travelImg}}">
+                </a>
+              </div>
+              
+              <div class="col-md-9">
+                <ul class="gjxqul">
+                  <li class="list-none"><span class="db">姓名：{{item.travelName}}</span></li>
+                 <!--  <li><span class="db">{{people.travelId}}</span></li> -->
+                  <li class="list-none"><span class="db">管区：{{item.travelArea}}</span></li>
+                  <li class="list-none">
+                    <button type="" class="btnblue" ng-click="gjdetail(item)">详情</button>
+                    <button type="" class="btnorange" ng-click="clickgj(item.travelId)">轨迹</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="list-group  gj-list bg-white">
+              <a href class="list-group-item2" ng-repeat="item in items">
+               <span>{{item.time}}</span><span>{{item.position}}</span>
+              </a>
+            </div> -->
+          </div>
+        </div>
+        </div>
+<!--       </tab>
+  </tabset> -->
+      
+</div>

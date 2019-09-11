@@ -1,0 +1,42 @@
+<div class="modal-header" >
+	<span class="close-span modal-close" ng-click="cancel()"><i class="icon-close"></i></span>
+    <h4 class="modal-title">新增</h3>
+</div>
+<div class="modal-body">
+        
+        <div class="row">
+            <div class="form-group col-sm-6 namediv">
+              <label class="namelabel col-sm-3">所属单位</label>
+              <select name="account" class="form-control nameinput col-sm-8">
+                <option value="option 1">请选择</option>
+                <option value="option 2">1</option>
+                <option value="option 3">2</option>
+              </select>
+            </div>
+            <div class="form-group col-sm-6 namediv">
+              <label class="namelabel col-sm-3">所属楼栋</label>
+              <select name="account" class="form-control nameinput col-sm-8">
+                <option value="option 1">请选择</option>
+                <option value="option 2">1</option>
+                <option value="option 3">2</option>
+              </select>
+            </div>
+        </div>   
+        
+        <div class="row">
+            <div class="form-group col-sm-10 namediv" ng-controller="js.controllers.date.dateContrl">
+                <label class="col-sm-2 control-label label-mar namelabel">日期</label>
+                <div class="c-datepicker-date-editor J-datepickerTime-range mt10 col-sm-9">
+                  <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
+                  <input placeholder="开始日期" name="" class=" nameinput c-datepicker-data-input" value="">
+                  <span class="c-datepicker-range-separator">-</span>
+                  <input placeholder="结束日期" name="" class="nameinput c-datepicker-data-input " value="">
+                </div>
+            </div>
+        </div>  
+			
+</div>
+<div class="modal-footer">                  
+    <button class="btn btn-default" ng-click="cancel()">保存</button>
+    <button class="btn btn-primary" ng-click="ok()">保存并继续</button>
+</div>

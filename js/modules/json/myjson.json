@@ -1,0 +1,17 @@
+[{
+    "travelId": "ff80808169bd00c60169dce47076013a",
+    "travelName": "3",
+    "travelArea": "二管区",
+    "travelPath": "M350,110 335,160 490,235 530,175 L560,190",
+    "travelImg": "img/man.png",
+    "travelDetail": [
+        {
+            "time": "09:23",
+            "position": "通过食堂摄像头"
+        },
+        {
+            "time": "12:56",
+            "position": "通过习艺楼摄像头"
+        }
+    ]
+}]

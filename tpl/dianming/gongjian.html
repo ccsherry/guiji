@@ -1,0 +1,264 @@
+<!-- <div class="bg-light lter b-b wrapper-md">
+  <h1 class="m-n font-thin h3">Datatable</h1>
+</div> -->
+<div class="wrapper-md">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      工间点名
+    </div>
+    <div class="table-responsive margin-top15">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group col-sm-5 mt40" ng-controller="js.controllers.date.dateContrl">
+                <label class="col-sm-1 control-label nopad label-mar">日期</label>
+                <div class="c-datepicker-date-editor J-datepickerTime-range col-sm-11">
+                  <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
+                  <input placeholder="开始日期" name="" class="c-datepicker-data-input" value="">
+                  <span class="c-datepicker-range-separator">-</span>
+                  <input placeholder="结束日期" name="" class="c-datepicker-data-input" value="">
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <label class="col-sm-3 control-label nopad label-mar">监区</label>
+                <select class="col-sm-9 input-sm form-control inline v-middle">
+                  <option value="0">监区A</option>
+                  <option value="1">监区B</option>
+                  <option value="2">监区C</option>
+                  <option value="3">监区D</option>
+                </select>        
+            </div>
+            <div class="col-sm-2 hidden-xs">
+                <label class="col-sm-3 control-label nopad label-mar">车间</label>
+                <select class="col-sm-9 input-sm form-control inline v-middle">
+                  <option value="0">车间一</option>
+                  <option value="1">车间二</option>
+                  <option value="2">车间三</option>
+                  <option value="3">车间四</option>
+                </select>                
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-2 textAlign-r">
+                  <button class="btn btn-primary">
+                    <i class="icon-undo"></i>重置
+                  </button>
+
+                  <button class="btn btn-info">
+                    <i class="icon-zoom-in"></i>查询
+                  </button>
+            </div>
+          </div>
+        </div>
+                  
+
+            <div class="row">
+              <div class="col-xs-12 nopad">
+              <!--tab-->
+<!--                 <tabset justified="true" class="tab-container"> -->
+<!--                   <tab heading="08:30-09：30"> -->
+                    <div class="table-responsive" ng-controller="js.controllers.modal.gongjiandetailController">
+                      <table id="sample-table-1" class="table table-striped table-bordered table-hover">
+                        <thead class="tdbackg">
+                          <tr>
+                            <th>日期</th>
+                            <th>监区</th>
+                            <th>车间</th>
+                            <th>批次号</th>
+                            <th>总数</th>
+                            <th>已点到</th>
+                            <th>未点</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>2018-12-3</td>
+                            <td>全部监区</td>
+                            <td >全部车间</td>
+                            <td></td>
+                            <td>500</td>
+
+                            <td>450
+                              <div class="visible-md visible-lg hidden-sm hidden-xs btn-group fl-right">
+
+                                <button class="btn btn-xs btn-warning" ng-click="opendetail()">
+                                  <i class="icon-magnifier bigger-120"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td>50
+                              <div class="visible-md visible-lg hidden-sm hidden-xs btn-group fl-right">
+
+                                <button class="btn btn-xs btn-warning" ng-click="opendetail2()">
+                                  <i class="icon-magnifier bigger-120"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td>2018-12-3</td>
+                            <td>全部监区</td>
+                            <td >全部车间</td>
+                            <td></td>
+                            <td>500</td>
+
+                            <td>450
+                              <div class="visible-md visible-lg hidden-sm hidden-xs btn-group fl-right">
+
+                                <button class="btn btn-xs btn-warning" ng-click="opendetail()">
+                                  <i class="icon-magnifier bigger-120"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td>50
+                              <div class="visible-md visible-lg hidden-sm hidden-xs btn-group fl-right">
+
+                                <button class="btn btn-xs btn-warning" ng-click="opendetail2()">
+                                  <i class="icon-magnifier bigger-120"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2018-12-3</td>
+                            <td>全部监区</td>
+                            <td >全部车间</td>
+                            <td></td>
+                            <td>500</td>
+
+                            <td>450
+                              <div class="visible-md visible-lg hidden-sm hidden-xs btn-group fl-right">
+
+                                <button class="btn btn-xs btn-warning" ng-click="opendetail()">
+                                  <i class="icon-magnifier bigger-120"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td>50
+                              <div class="visible-md visible-lg hidden-sm hidden-xs btn-group fl-right">
+
+                                <button class="btn btn-xs btn-warning" ng-click="opendetail2()">
+                                  <i class="icon-magnifier bigger-120"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2018-12-3</td>
+                            <td>全部监区</td>
+                            <td >全部车间</td>
+                            <td></td>
+                            <td>500</td>
+
+                            <td>450
+                              <div class="visible-md visible-lg hidden-sm hidden-xs btn-group fl-right">
+
+                                <button class="btn btn-xs btn-warning" ng-click="opendetail()">
+                                  <i class="icon-magnifier bigger-120"></i>
+                                </button>
+                              </div>
+                            </td>
+                            <td>50
+                              <div class="visible-md visible-lg hidden-sm hidden-xs btn-group fl-right">
+
+                                <button class="btn btn-xs btn-warning" ng-click="opendetail2()">
+                                  <i class="icon-magnifier bigger-120"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <footer class="panel-footer">
+                      <div class="row">
+                        <div class="col-sm-4 hidden-xs">
+                                
+                        </div>
+                        <div class="col-sm-4 text-center">
+                          <small class="text-muted inline m-t-sm m-b-sm">显示20条数据 / 共50条</small>
+                        </div>
+                        <div class="col-sm-4 text-right text-center-xs">                
+                          <ul class="pagination pagination-sm m-t-none m-b-none">
+                            <li><a href=""><i class="fa fa-chevron-left"></i></a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href=""><i class="fa fa-chevron-right"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </footer>
+<!--                   </tab> -->
+                  <!-- <tab heading="10:30-11：30">
+                    <div class="table-responsive">
+                      <table id="sample-table-1" class="table table-striped table-bordered table-hover">
+                        <thead class="tdbackg">
+                          <tr>
+                            <th>姓名</th>
+                            <th>编号</th>
+                            <th class="hidden-480">其他信息</th>
+                            <th>
+                              <i class="icon-time bigger-110 hidden-480"></i>
+                              点到时间
+                            </th>
+                            <th class="hidden-480">状态</th>
+
+                            <th>操作</th>
+                          </tr>
+                        </thead>
+
+                        <tbody>
+                          <tr>
+                            <td>张三</td>
+                            <td>12343434456</td>
+                            <td class="hidden-480">高危嫌犯</td>
+                            <td>2018-11-15 16：00</td>
+                            <td class="hidden-480">
+                              <span class="label label-warning label-zt">出工</span>
+                            </td>
+
+                            <td>
+                              <div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
+
+                                <button class="btn btn-xs btn-warning">
+                                  <i class="icon-magnifier bigger-120"></i>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <footer class="panel-footer">
+                      <div class="row">
+                        <div class="col-sm-4 hidden-xs">
+                                
+                        </div>
+                        <div class="col-sm-4 text-center">
+                          <small class="text-muted inline m-t-sm m-b-sm">显示20条数据 / 共50条</small>
+                        </div>
+                        <div class="col-sm-4 text-right text-center-xs">                
+                          <ul class="pagination pagination-sm m-t-none m-b-none">
+                            <li><a href=""><i class="fa fa-chevron-left"></i></a></li>
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href=""><i class="fa fa-chevron-right"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </footer>
+                  </tab> -->
+<!--                 </tabset> -->
+              <!--tab end-->
+                
+              </div><!-- /col-12 -->
+            </div>
+    </div>
+  </div>
+</div>

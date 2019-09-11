@@ -1,0 +1,176 @@
+
+<div class="wrapper-md">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      终端管理设置
+    </div>
+    <div class="row wrapper">
+      <div class="col-sm-4">
+        <div class="form-group">
+            <label class="col-sm-3 control-label nopad label-mar">终端名称：</label>
+            <div class="col-sm-9 nopad">
+              <input type="text" class="form-control">                        
+            </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+            <label class="col-sm-3 control-label nopad label-mar">终端IP：</label>
+            <div class="col-sm-9 nopad">
+              <input type="text" class="form-control">                        
+            </div>
+        </div>
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-2 textAlign-r">
+        <button class="btn btn-primary">
+          <i class="icon-undo"></i>重置
+        </button>
+
+        <button class="btn btn-info">
+          <i class="icon-zoom-in"></i>查询
+        </button>
+      </div>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-striped b-t b-light tb-13px">
+        <thead>
+          <tr class="systr">
+            <th>
+             
+            <label class="checkbox-inline">
+              <input class="position-r" type="checkbox" value="option1">
+            </label>
+            </th>
+            <th>序号</th>
+            <th>终端ID</th>
+            <th>终端/摄像头名称</th>
+            <th>终端IP</th>
+            <th>设备类型</th>
+            <th>所属单位</th>
+            <th>所在楼栋</th>
+            <th>所在楼层</th>
+            <th>所在区域</th>
+            <th>安装位置</th>
+            <th>有无授权</th>
+            <th>注册时间</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+            <!-- <label class="i-checks m-b-none"><input type="checkbox" name="post[]"><i></i></label> -->
+            <label class="checkbox-inline">
+              <input class="position-r" type="checkbox" value="option1">
+            </label>
+            </td>
+            <td>1</td>
+            <td>15345gfdd</td>
+            <td>测试1</td>
+            <td>192.168.10.1</td>
+            <td>出收工点名</td>
+            <td>未管所一监区</td>
+            <td>1号楼</td>
+            <td>4</td>
+            <td>车间</td>
+            <td>南区车间旁</td>
+            <td>有</td>
+            <td>2018-11-17</td>
+            <td>
+              <a href class="active" ui-toggle-class><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i>同步下发</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label class="checkbox-inline">
+              <input class="position-r" type="checkbox" value="option1">
+            </label></td>
+            <td>1</td>
+            <td>15345gfdd</td>
+            <td>测试1</td>
+            <td>192.168.10.1</td>
+            <td>出收工点名</td>
+            <td>未管所一监区</td>
+            <td>1号楼</td>
+            <td>4</td>
+            <td>车间</td>
+            <td>南区车间旁</td>
+            <td>有</td>
+            <td>2018-11-17</td>
+            <td>
+              <a href class="active" ui-toggle-class><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i>同步下发</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label class="checkbox-inline">
+              <input class="position-r" type="checkbox" value="option1">
+            </label></td>
+            <td>1</td>
+            <td>15345gfdd</td>
+            <td>测试1</td>
+            <td>192.168.10.1</td>
+            <td>出收工点名</td>
+            <td>未管所一监区</td>
+            <td>1号楼</td>
+            <td>4</td>
+            <td>车间</td>
+            <td>南区车间旁</td>
+            <td>有</td>
+            <td>2018-11-17</td>
+            <td>
+              <a href class="active" ui-toggle-class><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i>同步下发</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label class="checkbox-inline">
+              <input class="position-r" type="checkbox" value="option1">
+            </label></td>
+            <td>1</td>
+            <td>15345gfdd</td>
+            <td>测试1</td>
+            <td>192.168.10.1</td>
+            <td>出收工点名</td>
+            <td>未管所一监区</td>
+            <td>1号楼</td>
+            <td>4</td>
+            <td>车间</td>
+            <td>南区车间旁</td>
+            <td>有</td>
+            <td>2018-11-17</td>
+            <td>
+              <a href class="active" ui-toggle-class><i class="fa fa-check text-success text-active"></i><i class="fa fa-times text-danger text"></i>同步下发</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <footer class="panel-footer ng-scope">
+          <div class="row" ng-controller="js.controllers.modal.sysaddController" >
+            <div class="col-sm-4 hidden-xs">
+                <p>
+                  <button class="btn m-b-xs btn-sm btn-primary btn-addon" ng-click="openadd()"><i class="fa fa-plus"></i>新增</button>
+                  <button class="btn m-b-xs btn-sm btn-info btn-addon"><i class="fa fa-trash-o"></i>删除</button>
+                  <button class="btn m-b-xs btn-sm btn-success btn-addon"><i class="fa fa-minus"></i>修改</button>
+                </p>    
+            </div>
+            <div class="col-sm-4 text-center">
+              <small class="text-muted inline m-t-sm m-b-sm">显示20条数据 / 共50条</small>
+            </div>
+            <div class="col-sm-4 text-right text-center-xs">                
+              <ul class="pagination pagination-sm m-t-none m-b-none">
+                <li><a href=""><i class="fa fa-chevron-left"></i></a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href=""><i class="fa fa-chevron-right"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+  </div>
+</div>

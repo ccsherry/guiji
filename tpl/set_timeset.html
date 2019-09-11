@@ -1,0 +1,162 @@
+<div class="wrapper-md" ng-controller="js.controllers.date.dateContrl">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      时间设置
+    </div>
+    <div class="panel-body b-light">
+      <div class="row">
+        <div class="form-group col-sm-5 mt40">
+            <label class="col-sm-1 control-label nopad label-mar">日期</label>
+            <div class="c-datepicker-date-editor J-datepickerTime-range col-sm-11">
+              <i class="c-datepicker-range__icon kxiconfont icon-clock"></i>
+              <input placeholder="开始日期" name="" class="c-datepicker-data-input" value="">
+              <span class="c-datepicker-range-separator">-</span>
+              <input placeholder="结束日期" name="" class="c-datepicker-data-input" value="">
+            </div>
+        </div>
+        <div class=" col-sm-2">
+            <label class="col-sm-3 control-label nopad label-mar">监区</label>
+            <select class="col-sm-9 input-sm form-control inline v-middle">
+              <option value="0">一监区</option>
+              <option value="1">一监区</option>
+              <option value="2">一监区</option>
+              <option value="3">一监区</option>
+            </select>                
+        </div>
+        <div class=" col-sm-2">
+            <label class="col-sm-3 control-label nopad label-mar">车间</label>
+            <select class="col-sm-9 input-sm form-control inline v-middle">
+              <option value="0">车间A</option>
+              <option value="1">车间A</option>
+              <option value="2">车间A</option>
+              <option value="3">车间A</option>
+            </select>                
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2 textAlign-r">
+            <button class="btn btn-primary">
+              <i class="icon-undo"></i>重置
+            </button>
+
+            <button class="btn btn-info">
+              <i class="icon-zoom-in"></i>查询
+            </button>
+        </div>
+      </div>
+
+    </div>
+    <div>
+      <table class="table m-b-none tb-green" >
+        <thead>
+          <tr>
+              <th>
+                <label class="checkbox-inline">
+                <input class="position-r" type="checkbox" value="option1">
+                </label></th>
+              <th>序号</th>
+              <th data-toggle="true">
+                  单位
+              </th>
+              <th>
+                  开始时间
+              </th>
+              <th>
+                  结束时间
+              </th>
+              <th data-hide="phone,tablet">
+                  备注
+              </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>
+                <label class="checkbox-inline">
+                <input class="position-r" type="checkbox" value="option1">
+                </label>
+              </td>
+              <td>1</td>
+              <td>未管所</td>
+              <td><a href>2018-11-19 08：30</a></td>
+              <td data-value="370961043292">2018-11-19 08：35</td>
+              <td data-value="3792">hello</td>
+          </tr>
+          <tr>
+              <td>
+                <label class="checkbox-inline">
+                <input class="position-r" type="checkbox" value="option1">
+                </label>
+              </td>
+              <td>2</td>
+              <td>未管所1</td>
+              <td><a href>2018-11-19 08：30</a></td>
+              <td data-value="370961043292">2018-11-19 08：35</td>
+              <td data-value="3792">hello</td>
+          </tr>
+          <tr>
+              <td>
+                <label class="checkbox-inline">
+                <input class="position-r" type="checkbox" value="option1">
+                </label>
+              </td>
+              <td>3</td>
+              <td>未管所1</td>
+              <td><a href>2018-11-19 08：30</a></td>
+              <td data-value="3292">2018-11-18 08：35</td>
+              <td data-value="372292">hello</td>
+          </tr>
+          <tr>
+              <td>
+                <label class="checkbox-inline">
+                <input class="position-r" type="checkbox" value="option1">
+                </label>
+              </td>
+              <td>4</td>
+              <td>未管所2</td>
+              <td><a href>2018-11-19 08：30</a></td>
+              <td data-value="1">2018-11-17 08：35</td>
+              <td data-value="3792">hello</td>
+          </tr>
+          <tr>
+              <td>
+                <label class="checkbox-inline">
+                <input class="position-r" type="checkbox" value="option1">
+                </label>
+              </td>
+              <td>5</td>
+              <td>未管所</td>
+              <td><a href>2018-11-19 08：30</a></td>
+              <td data-value="2">2018-11-19 08：35</td>
+              <td data-value="379233">hello</td>
+          </tr>
+        </tbody>
+        
+      </table>
+      <footer class="panel-footer ng-scope">
+          <div class="row"  ng-controller="js.controllers.modal.timeaddController" >
+            <div class="col-sm-4 hidden-xs">
+                <p>
+                  <button class="btn m-b-xs btn-sm btn-primary btn-addon" ng-click="openadd()"><i class="fa fa-plus"></i>新增</button>
+                  <button class="btn m-b-xs btn-sm btn-info btn-addon"><i class="fa fa-trash-o"></i>删除</button>
+                  <button class="btn m-b-xs btn-sm btn-success btn-addon"><i class="fa fa-minus"></i>修改</button>
+                </p>    
+            </div>
+            <div class="col-sm-4 text-center">
+              <small class="text-muted inline m-t-sm m-b-sm">显示20条数据 / 共50条</small>
+            </div>
+            <div class="col-sm-4 text-right text-center-xs">                
+              <ul class="pagination pagination-sm m-t-none m-b-none">
+                <li><a href=""><i class="fa fa-chevron-left"></i></a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href=""><i class="fa fa-chevron-right"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+    </div>
+  </div>
+</div>
